@@ -1,6 +1,10 @@
 AllCops:
   Exclude:
+    - bin/**/*
+    - config/initializers/devise.rb
     - db/schema.rb
+    - db/migrate/**/*
+    - lib/tasks/db_rebuild.rake
 
 Style/AccessorMethodName:
   Description: Check the naming of accessor methods for get_/set_.
@@ -31,9 +35,22 @@ Style/Attr:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#attr'
   Enabled: false
 
+Style/EmptyMethod:
+  Enabled: false
+
+Style/SymbolArray:
+  Description: 'Use %i or %I for an array of symbols'
+  Enabled: false
+
+Layout/ClosingParenthesisIndentation:
+  Enabled: false
+
 Metrics/BlockNesting:
   Description: 'Avoid excessive block nesting'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#three-is-the-number-thou-shalt-count'
+  Enabled: false
+
+Style/BlockComments:
   Enabled: false
 
 Style/CaseEquality:
@@ -57,6 +74,10 @@ Metrics/ClassLength:
 
 Metrics/ModuleLength:
   Description: 'Avoid modules longer than 100 lines of code.'
+  Enabled: false
+
+Metrics/BlockLength:
+  Description: 'Avoid blocks longer than 100 lines of code.'
   Enabled: false
 
 Style/ClassVars:
@@ -192,6 +213,9 @@ Style/LambdaCall:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#proc-call'
   Enabled: false
 
+Layout/SpaceInLambdaLiteral:
+  Enabled: false
+
 Style/LineEndConcatenation:
   Description: >-
                  Use \ instead of + or << to concatenate two string literals at
@@ -199,9 +223,9 @@ Style/LineEndConcatenation:
   Enabled: false
 
 Metrics/LineLength:
-  Description: 'Limit lines to 80 characters.'
+  Description: 'Limit lines to 100 characters.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#80-character-limits'
-  Max: 80
+  Max: 100
 
 Metrics/MethodLength:
   Description: 'Avoid methods longer than 10 lines of code.'
@@ -338,7 +362,7 @@ Style/StringLiterals:
 Style/TrailingCommaInArguments:
   Description: 'Checks for trailing comma in argument lists.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
-  EnforcedStyleForMultiline: comma
+  EnforcedStyleForMultiline: no_comma
   SupportedStylesForMultiline:
     - comma
     - consistent_comma
@@ -394,7 +418,7 @@ Layout/AlignParameters:
 Layout/DotPosition:
   Description: 'Checks the position of the dot in multi-line method calls.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#consistent-multi-line-chains'
-  EnforcedStyle: trailing
+  EnforcedStyle: leading
 
 Layout/ExtraSpacing:
   Description: 'Do not use unnecessary spacing.'
@@ -413,6 +437,17 @@ Layout/MultilineMethodCallIndentation:
                  that span more than one line.
   Enabled: true
   EnforcedStyle: indented
+
+Layout/MultilineMethodCallBraceLayout:
+  EnforcedStyle: new_line
+  SupportedStyles:
+    # symmetrical: closing brace is positioned in same way as opening brace
+    # new_line: closing brace is always on a new line
+    # same_line: closing brace is always on the same line as last argument
+    - symmetrical
+    - new_line
+    - same_line
+  Enabled: true
 
 Layout/InitialIndentation:
   Description: >-
