@@ -11,10 +11,8 @@ javascript:
   enabled: false
 jscs:
   enabled: false
-  config_file: style/javascript/.jscsrc
 ruby:
   enabled: true
   config_file: style/ruby/.rubocop.yml
 scss:
   enabled: false
-  config_file: style/sass/.scss-lint.yml
