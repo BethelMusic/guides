@@ -1,4 +1,5 @@
 {
+  "plugins": ["react"],
   "parser": "babel-eslint",
   "extends": ["standard"],
   "globals": {
@@ -14,5 +15,6 @@
       "imports": "always-multiline",
       "exports": "always-multiline"
     }],
+    "react/jsx-uses-vars": "error"
   }
 }
