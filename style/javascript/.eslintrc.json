@@ -8,5 +8,11 @@
     "space-before-function-paren": ["error", {"named": "never", "anonymous": "never"}],
     "quotes": ["error", "double"],
     "jsx-quotes": ["error", "prefer-double"],
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline"
+    }],
   }
 }
