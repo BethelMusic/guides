@@ -6,5 +6,7 @@
   },
   "rules": {
     "space-before-function-paren": ["error", {"named": "never", "anonymous": "never"}],
+    "quotes": ["error", "double"],
+    "jsx-quotes": ["error", "prefer-double"],
   }
 }
