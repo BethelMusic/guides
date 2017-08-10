@@ -16,7 +16,7 @@ linters:
     enabled: true
 
   ConsecutiveComments:
-    enabled: true
+    enabled: false
 
   ConsecutiveSilentScripts:
     enabled: true
@@ -33,6 +33,9 @@ linters:
 
   ImplicitDiv:
     enabled: true
+
+  InlineStyles:
+    enabled: false
 
   LeadingCommentSpace:
     enabled: true
