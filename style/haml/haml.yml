@@ -2,6 +2,9 @@
 # frameworks such as Jekyll/Middleman
 skip_frontmatter: false
 
+exclude:
+  - "app/views/devise/mailer/*"
+
 linters:
   AltText:
     enabled: false
