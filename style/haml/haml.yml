@@ -4,6 +4,7 @@ skip_frontmatter: false
 
 exclude:
   - "app/views/devise/mailer/*"
+  - "vendor/**/*"
 
 linters:
   AltText:
