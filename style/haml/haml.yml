@@ -54,7 +54,8 @@ linters:
     enabled: true
 
   RuboCop:
-    enabled: false
+    enabled: true
+    inherit_from: .rubocop.yml
 
   RubyComments:
     enabled: true
