@@ -2,6 +2,9 @@
 # frameworks such as Jekyll/Middleman
 skip_frontmatter: false
 
+exclude:
+  - "app/views/devise/mailer/*"
+
 linters:
   AltText:
     enabled: false
@@ -13,7 +16,7 @@ linters:
     enabled: true
 
   ConsecutiveComments:
-    enabled: true
+    enabled: false
 
   ConsecutiveSilentScripts:
     enabled: true
@@ -30,6 +33,9 @@ linters:
 
   ImplicitDiv:
     enabled: true
+
+  InlineStyles:
+    enabled: false
 
   LeadingCommentSpace:
     enabled: true
@@ -48,7 +54,8 @@ linters:
     enabled: true
 
   RuboCop:
-    enabled: false
+    enabled: true
+    inherit_from: .rubocop.yml
 
   RubyComments:
     enabled: true
