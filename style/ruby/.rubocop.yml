@@ -217,6 +217,16 @@ Style/FormatString:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#sprintf'
   Enabled: false
 
+# Enforce using either `%<token>s` or `%{token}`
+Style/FormatStringToken:
+  EnforcedStyle: template
+  SupportedStyles:
+    # Prefer tokens which contain a sprintf like type annotation like
+    # `%<name>s`, `%<age>d`, `%<score>f`
+    - annotated
+    # Prefer simple looking "template" style tokens like `%{name}`, `%{age}`
+    - template
+
 Style/GlobalVars:
   Description: 'Do not introduce global variables.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#instance-vars'
