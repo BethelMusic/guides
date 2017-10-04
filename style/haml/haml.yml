@@ -79,3 +79,7 @@ linters:
 
   UnnecessaryStringOutput:
     enabled: true
+    
+  ViewLength:
+    enabled: false
+    max: 100
