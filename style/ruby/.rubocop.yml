@@ -636,7 +636,7 @@ Naming/UncommunicativeMethodParamName:
   Enabled: false
 
 Naming/MemoizedInstanceVariableName:
-  Enabled: false
+  Enabled: true
 
 # Performance
 
