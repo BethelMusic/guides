@@ -41,6 +41,7 @@
     ],
     "block-opening-brace-space-before": "always",
     "declaration-block-semicolon-newline-before": "never-multi-line",
+    "rule-empty-line-before": "always",
     "length-zero-no-unit": true,
     "number-leading-zero": "always",
     "scss/operator-no-unspaced": true
