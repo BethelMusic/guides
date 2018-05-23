@@ -38,6 +38,9 @@ linters:
   InlineStyles:
     enabled: false
 
+  InstanceVariables:
+    enabled: false
+
   LeadingCommentSpace:
     enabled: true
 
@@ -79,7 +82,7 @@ linters:
 
   UnnecessaryStringOutput:
     enabled: true
-    
+
   ViewLength:
     enabled: false
     max: 100
