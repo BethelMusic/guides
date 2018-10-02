@@ -29,12 +29,14 @@
       "rules"
     ],
     "order/properties-alphabetical-order": true,
-    "rule-empty-line-before": ["always",
+    "rule-empty-line-before": [
+      "always",
       {
         "except": ["first-nested"]
       }
     ],
-    "at-rule-empty-line-before": ["always",
+    "at-rule-empty-line-before": [
+      "always",
       {
         "except": ["first-nested", "blockless-after-blockless"]
       }
@@ -43,6 +45,7 @@
     "declaration-block-semicolon-newline-before": "never-multi-line",
     "length-zero-no-unit": true,
     "number-leading-zero": "always",
-    "scss/operator-no-unspaced": true
+    "scss/operator-no-unspaced": true,
+    "indentation": [2]
   }
 }
