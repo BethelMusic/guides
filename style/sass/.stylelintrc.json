@@ -46,6 +46,7 @@
     "length-zero-no-unit": true,
     "number-leading-zero": "always",
     "scss/operator-no-unspaced": true,
-    "indentation": [2]
+    "indentation": [2],
+    "declaration-block-no-duplicate-properties": true
   }
 }
