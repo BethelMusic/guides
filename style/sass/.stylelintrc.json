@@ -15,7 +15,6 @@
       {
         "type": "at-rule",
         "name": "include",
-        "parameter": "mq",
         "hasBlock": true
       },
       {
