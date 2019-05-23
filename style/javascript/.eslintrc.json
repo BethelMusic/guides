@@ -3,6 +3,11 @@
     "browser": true
   },
   "plugins": ["react"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "parser": "babel-eslint",
   "extends": ["standard"],
   "globals": {
@@ -26,7 +31,9 @@
         "exports": "always-multiline"
       }
     ],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
     "prefer-const": ["error"],
-    "react/jsx-uses-vars": "error"
+    "react/jsx-uses-vars": "error",
+    "react/prop-types": [1, { "ignore": ["children", "className", "render"] }]
   }
 }
